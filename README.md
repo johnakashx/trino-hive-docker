@@ -20,10 +20,10 @@ docker container exec -it docker-compose_trino-coordinator_1 trino
 ```
 Step 5 -  Create schema and table and play around with trino, you can see the trino dashboard from localhost:8080.
 ```sql
-CREATE SCHEMA minio.test
+CREATE SCHEMA hive.test
 WITH (location = 's3a://test/');
 
-CREATE TABLE minio.test.customer
+CREATE TABLE hive.test.customer
 WITH (
     format = 'ORC',
     external_location = 's3a://test/customer/'
