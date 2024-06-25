@@ -4,7 +4,7 @@ cd docker-compose
 ```
 Step 1 - Build a Hive Metastore image with the Dockerfile to support PostgresDB
 ```bash
-docker build -t my-hive-metastore .
+docker build -t akashx-hive-metastore .
 ```
 Step 2 - Implement with docker-compose
 ```bash
